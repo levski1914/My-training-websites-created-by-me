@@ -1,0 +1,288 @@
+body {
+    font-weight: 400;
+    color: #707070;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #191919;
+}
+
+
+/* Global properties */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #939393;
+}
+
+.primary-nav {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    width: 100%;
+}
+
+.primary-nav .site-title {
+    color: #ffffff;
+    padding: 0 1em;
+}
+
+.nav-main {
+    margin: 0 auto;
+}
+
+.nav-main ul {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-main li {
+    padding: .5em .5em;
+    text-align: right;
+}
+
+.nav-main li a.active {
+    color: white
+}
+
+.search ul {
+    display: flex;
+}
+
+.primary-nav .search li {
+    padding: .5em;
+}
+
+.primary-nav .nav-main .sign {
+    background-color: #105DFB;
+    border-radius: 20px;
+}
+
+.primary-nav .sign a {
+    color: #DAE6FD;
+    font-weight: 400;
+}
+
+.header-title {
+    margin: 0;
+    padding: 3em 0;
+    background: url('8689ec57905841.59e8397c918eb.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    text-align: center;
+    color: #ffffff;
+}
+
+.header-title h1 {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.main-menu .menu ul {
+    width: 90%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li a {
+    padding: 0 2em;
+    color: #2D2D2D;
+    font-weight: 600;
+}
+
+.all-cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    background-color: #f9f9f9;
+    padding: 1em 2em 4em 2em;
+    align-items: start;
+    box-shadow: 0px 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.box {
+    background-color: white;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    color: #393939;
+}
+
+.card-text {
+    border-bottom: 1px solid #F4F4F4;
+    padding: .2em 1em;
+}
+
+.card-text .card-title {
+    margin: 0;
+    margin-bottom: 3em;
+}
+
+.card-text p {
+    margin: 0;
+    padding-bottom: .2em;
+}
+
+.main-image {
+    margin-bottom: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.box .card1-secondary {
+    display: flex;
+    justify-content: space-between;
+    padding: .2em 1em;
+}
+
+.bars {
+    display: none;
+}
+
+.footer {
+    background-color: #191919;
+    color: #969696;
+    font-weight: 700;
+}
+
+.footer-container {
+    display: flex;
+    padding: 0 1em;
+    z-index: 10;
+    width: 50%;
+    overflow-x: hidden;
+}
+
+.list-menu {
+    display: flex;
+}
+
+.list-menu p {
+    z-index: 1;
+    padding: 0 1em;
+    border-right: 2px solid #292929;
+}
+
+.footer-menu ul {
+    display: flex;
+    padding: 0 1em;
+}
+
+.footer-menu li {
+    padding: 0 .5em;
+}
+
+.adobe p {
+    position: absolute;
+    right: 1.5em;
+}
+
+footer {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    bottom: 0;
+}
+
+@media(max-width:780px) {
+    .search ul {
+        flex-direction: column;
+    }
+    .all-cards {
+        padding: ;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media(max-width:700px) {
+    .search ul {
+        flex-direction: column;
+    }
+    .all-cards {
+        padding: 0;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    footer {
+        position: relative;
+        font-size: 10px;
+    }
+    .menu li a {
+        font-size: .7em;
+    }
+    .menu ul {
+        padding: 0;
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 505px) {
+    .primary-nav {
+        display: grid;
+        padding: 1em;
+    }
+    .nav-main ul {
+        background-color: #105DFB;
+        display: none;
+    }
+    .nav-main li {
+        text-align: center;
+    }
+    .search ul {
+        background-color: #105DFB;
+        display: none;
+    }
+    .search li {
+        text-align: center;
+    }
+    .nav-main,
+    .bars {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        display: block;
+        padding: 1em;
+        color: white;
+        cursor: pointer;
+    }
+    .all-cards {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .main-menu ul {
+        align-items: center;
+        flex-direction: column;
+    }
+    .menu li a {
+        text-align: center;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-menu ul {
+        flex-direction: column;
+    }
+    .adobe p {
+        position: relative;
+        padding: 0 2.5em;
+    }
+}
