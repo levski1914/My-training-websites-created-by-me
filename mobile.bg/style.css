@@ -1,0 +1,262 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        color: #0099ff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .head {
+        width: 100%;
+        max-width: 1190px;
+        margin: 0 auto;
+        padding: 1.5em 0 0 0;
+        position: relative;
+    }
+    
+    .logo-image {
+        width: 170px;
+        height: 45px;
+    }
+    
+    .head {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .logo-menu {
+        display: flex;
+    }
+    
+    .logo-menu li {
+        font-size: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 1em;
+    }
+    
+    .logo-menu a {
+        font-weight: 700;
+        padding-right: 1em;
+        border-right: 2px solid;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    a {
+        color: #0099ff;
+        text-decoration: none;
+    }
+    
+    .advertisement {
+        display: flex;
+        padding: 1em;
+    }
+    
+    .editbutton {
+        float: right;
+        margin-right: 15px;
+        padding: 0 15px;
+        line-height: 30px;
+        border: 1px solid #0099ff;
+        border-radius: 5px;
+    }
+    
+    .addbutton {
+        float: right;
+        line-height: 32px;
+        padding: 0 15px;
+        margin-right: -1em;
+        font-size: 1em;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 1000;
+    }
+    
+    .under-head {
+        padding-right: 0em;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .under-head .first {
+        padding: .1em 0em;
+    }
+    
+    .under-head .first a {
+        padding: 4px 10px 0;
+        background-color: #605d5d;
+        margin-right: 1px;
+        color: #fff;
+        height: 34px;
+        font-size: 20px;
+        border-radius: 7px 7px 0 0;
+        font-weight: 700;
+        float: left;
+        display: block;
+    }
+    
+    .under-head .second {
+        padding: .1em 0;
+    }
+    
+    .under-head .second a {
+        padding: 4px 11px 0;
+        background-color: #605d5d;
+        border-radius: 7px 7px 0 0;
+        color: #fff;
+        font-size: 20px;
+        display: block;
+        height: 34px;
+    }
+    
+    .under-head a.rent-car {
+        background-color: #fff;
+        background: url("logo.png") no-repeat;
+        background-size: 39px 20px;
+        background-position: 10px 2px;
+        font-size: 18px;
+        text-align: right;
+        width: 180px;
+        color: #329dd6;
+        font-weight: bold;
+        display: block;
+        height: 34px;
+        padding: 4px 11px 0;
+        margin-right: 2px;
+        border: 1px solid #0099ff;
+        border-bottom: 0;
+    }
+    
+    .head {
+        font-weight: 700;
+    }
+    
+    .bottom-line {
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        height: 6px;
+        background-color: #328fc5;
+        bottom: 0;
+        border-top: 1px solid #fff;
+    }
+    
+    .under-head {
+        font-size: 15px;
+    }
+    
+    .under-head .first .active {
+        background-color: #49bdfe;
+        position: relative;
+        z-index: 2;
+        background-color: linear-gradient(to bottom, #49bdfe 2%, #328fc5 90%);
+        background-image: linear-gradient(rgb(73, 189, 254) 2%, rgb(50, 143, 197)90%);
+        background-position-x: initial;
+        background-position-y: initial;
+    }
+    
+    .under-head .first a:hover {
+        position: relative;
+        z-index: 2;
+        background-color: linear-gradient(to bottom, #49bdfe 2%, #328fc5 90%);
+        background-image: linear-gradient(rgb(73, 189, 254) 2%, rgb(50, 143, 197)90%);
+        background-position-x: initial;
+        background-position-y: initial;
+    }
+    
+    .under-head a.rent-car:hover {
+        background-color: white;
+        position: relative;
+        margin-top: -3px;
+        background: url("logo.png") no-repeat;
+        background-size: 39px 20px;
+        background-position: 10px 2px;
+    }
+    
+    .under-head .second a:hover {
+        position: relative;
+        z-index: 2;
+        background-color: linear-gradient(to bottom, #49bdfe 2%, #328fc5 90%);
+        background-image: linear-gradient(rgb(73, 189, 254) 2%, rgb(50, 143, 197)90%);
+        background-position-x: initial;
+        background-position-y: initial;
+    }
+    
+    .category {
+        width: 660px;
+        padding: 5px 0 10px;
+        text-align: center;
+    }
+    
+    .category a {
+        margin: 0 5px;
+        opacity: .5;
+        display: inline-block;
+        transition: opacity .3s;
+    }
+    
+    .category a.selected,
+    .category a:hover {
+        opacity: 1;
+    }
+    
+    .category a img {
+        height: 20px;
+    }
+    
+    .search-car {
+        display: block;
+        padding: 0;
+    }
+    
+    .main-container {
+        width: 660px;
+        border: 1px solid #0099ff;
+    }
+    
+    .choose {
+        border: 1px solid black;
+        height: 24px;
+    }
+    
+    .head:nth-child(1) {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .vlgtop {
+        width: 350px;
+        text-align: left;
+    }
+    
+    .widget div.title {
+        padding: 3px 7px 7px 7px;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: bold;
+        color: #505050;
+    }
+    
+    .widget div.girlInfo {
+        font-size: 12px;
+        font-weight: bold;
+        color: #505050;
+        margin-top: 7px;
+    }
+    
+    .widget div.title a {
+        display: inline-block;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: bold;
+        color: #505050;
+        text-decoration: none;
+        text-transform: none;
+        background: url(img/fakti-logo.svg) right 0 no-repeat;
+        padding-right: 86px;
+        transition: background-position .4s;
+    }
